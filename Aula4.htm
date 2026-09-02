@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lan="pt-BR">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viwport" content="width=device-width, initial-scale=1.0">
+     <title>Aula de HTML5: Formats e indicadores</title>
+</head>
+<body>
+
+     <h1>Exemplo Interativo de Formulários e Indicadores em HTML5</h1>
+
+     <form action="#" method="post">
+
+       <fieldset>
+               <Legend>Dados de cadastro e Agendamento</Legend>
+
+               <Label for="usuario">Samuel</Label><br>
+               <input type="text" id="usuario" name="Samuel" placeholder="Ex:João"required><br><br>
+
+               <label for="idade">Idade 14</label><br>
+               <imput type="nuber" id="idade"  nome="idade" min="1" max="120" placeholder="Ex:18"><br><br>
+
+                <ladel for="nacimento">Data de Nacimento:</ladel><br>
+                <input type="date" id="idade" name="nacimento"><br><br>
+
+                <label for="consulta">data e hora da aula:</label><br
+                 <input type="datetime-local" id="consulta" name="consulta"><br><br>
+
+              <label for="cor_favorita"Cor preferida do prfil:</label><br>
+                <input type="color" id="cor_favorita" name="cor_favorita" value="#ff0000"><br><br>
+                
+                <label for="satisfação">Nivel de Satisfação (0 a 10):</label><br>
+                <imput type="range" id="satisfação" name="satisfação" min="0" max="10" step="1"><br><br>
+
+                    <label for="navegador">Navegador Principal :</label><br>
+                <imput type="texte" id="navegador" name="navegador" list="navegador" placeholder="Escolha ou digite...">
+                    <datalist id="navegadores">
+                         <option value="Google Chome">
+                        <option value="Mozilla Firefox">
+                        <option value="Microsoft Edge">
+                        <option value="Safari">
+                        <option value="Opera">
+                        </datalist>
+
+                    </fieldset
+
+                    <br>
+
+                    <fieldset>
+                    <lagend>Indicadores de prodresso e Méricas</lagend>
+
+                    <label for="progersso_curso">rogresso do curso (70%):</label><br>
+                    <progresso id="progresso_curso" value="70" max="100">70%</progresso><br><br>
+
+                    <label for="uso_disco">uso de Armazenamento (75) de 100 GB):</label><br><br>
+                    <meter id="uso_disco" value="75" min="0" max="100" low="30" high="80" optimum="20">75%</meter>
+                    </fieldset>
+
+                    <br>
+                    
+                    <button type="submit">Enviar dados</button>
+
+                    </form>
+
+                    </body>
+                    </html>
