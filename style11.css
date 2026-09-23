@@ -1,0 +1,52 @@
+_fundo {
+    background-color: lightblue;
+
+}
+
+_borda-1{
+      border: 3px solid black;
+
+}
+
+_borda-2 {
+    border: 3px dashed red;
+
+}
+
+_borda-3 {
+    barder: 3px dotted blue;
+
+}
+_cor-texto {
+    color: green;
+
+}
+
+_negrito {
+    font-weight: bold;
+
+}
+_riscado {
+    text-decoration: line-through;
+}
+_outra-fonte {
+    font-family: 'Courier New', monospace;
+}
+
+_esquerda {
+    texto-aling: left;
+}
+
+_centro {
+    text-align: center;
+}
+_direita {
+    text-aling: right;
+}
+
+body {
+  background-image: url("imagem.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
