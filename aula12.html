@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratório Prático de CSS - Guia de Estilização</title>
+    <!-- Aluno: Conecte seu arquivo style.css aqui usando <link rel="stylesheet" href="style.css"> -->
+     <link rel="stylesheet" href="style12.css">
+</head>
+<body>
+
+    <!-- 
+      DICA GERAL PARA O CORPO DO SITE:
+      - Use `background-color` e `font-family` no seletor 'body' para definir o fundo geral e a tipografia padrão.
+    -->
+
+    <!-- CABEÇALHO DO SITE -->
+    <header id="site-header">
+        <!-- 
+          Dica: Use `background-color`, `padding`, `display: flex`, e `justify-content: space-between` 
+          no #site-header para organizar o logo e o menu lado a lado.
+        -->
+        <div class="logo-wrapper">
+            <!-- Dica: Use `font-size`, `color` e `font-weight` para destacar o título da marca -->
+            <h1 class="site-title">MeuEstúdio.css</h1>
+        </div>
+
+        <nav class="main-navigation" aria-label="Menu principal">
+            <!-- 
+              Dica: Use `display: flex`, `list-style: none` e `gap` na lista abaixo 
+              para alinhar os links do menu horizontalmente.
+            -->,
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main id="main-content">
+
+        <!-- SEÇÃO HERO / DESTAQUE -->
+        <section id="inicio" class="hero-section">
+            <!-- 
+              Dica: Use `padding`, `background-image` ou gradientes (`background: linear-gradient`) 
+              para dar um visual atraente a esta seção principal.
+            -->
+            <div class="hero-content">
+                <!-- Dica: Use `background-color`, `color`, `border-radius` e `padding` para estilizar este selo -->
+                <span class="badge">Desafio Prático de CSS</span>
+                
+                <!-- Dica: Use `font-size: 2.5rem`, `color` e `line-height` para o título principal -->
+                <h2 class="hero-heading">Transforme este HTML em uma Obra de Arte com CSS</h2>
+                
+                <p class="hero-description">
+                    <em>Dica: Use <code>font-size</code> e <code>color</code> aqui para melhorar a legibilidade do texto descritivo.</em> 
+                    Esta página foi construída sem estilos visuais. Sua missão é criar o arquivo <code>style.css</code> e aplicar seletores, box-model e flexbox.
+                </p>
+
+                <div class="hero-actions">
+                    <!-- Dica: Use `padding`, `background-color`, `color`, `border-radius` e `text-decoration: none` para criar botões -->
+                    <a href="#servicos" class="btn btn-primary">Ver Serviços</a>
+                    <a href="#sobre" class="btn btn-secondary">Saiba Mais</a>
+                </div>
+            </div>
+
+            <div class="hero-image-container">
+                <!-- Dica: Use `max-width: 100%`, `height: auto` e `border-radius` nesta imagem -->
+                <img src="https://placehold.co/500x350/2563eb/ffffff?text=Area+da+Imagem+Hero" alt="Ilustração do projeto" class="responsive-img">
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE SERVIÇOS / CARDS -->
+        <section id="servicos" class="services-section">
+            <div class="section-header">
+                <!-- Dica: Use `text-align: center` e `margin-bottom` no cabeçalho da seção -->
+                <h2 class="section-title">Nossos Principais Módulos</h2>
+                <p class="section-subtitle">Dica: Use propriedades de fontes e cores para estilizar subtítulos.</p>
+            </div>
+            
+            <!-- 
+              DICA PARA OS CARDS:
+              - Use `display: grid` ou `display: flex` com `flex-wrap: wrap` e `gap: 20px` 
+              no .cards-grid para alinhar os cartões lado a lado.
+            -->
+            <div class="cards-grid">
+                
+                <!-- Card 1 -->
+                <article class="card service-card">
+                    <!-- 
+                      Dica para o Card: Use `background-color: #ffffff`, `border`, `border-radius: 12px`, 
+                      `padding: 24px` e `box-shadow` para criar o efeito de cartão emulado.
+                    -->
+                    <div class="card-icon">🎨</div>
+                    <h3 class="card-title">1. Cores e Tipografia</h3>
+                    <p class="card-text">Dica: Use <code>color</code>, <code>font-family</code> e <code>font-weight</code> para estilizar títulos e parágrafos dos cartões.</p>
+                    <a href="#" class="card-link">Explorar &rarr;</a>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card service-card">
+                    <div class="card-icon">📐</div>
+                    <h3 class="card-title">2. Box Model & Espaços</h3>
+                    <p class="card-text">Dica: Pratique o uso correto de <code>margin</code>, <code>padding</code> e <code>border</code> para controlar os espaçamentos internos e externos.</p>
+                    <a href="#" class="card-link">Explorar &rarr;</a>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card service-card">
+                    <div class="card-icon">🚀</div>
+                    <h3 class="card-title">3. Flexbox e Layout</h3>
+                    <p class="card-text">Dica: Utilize <code>display: flex</code>, <code>justify-content</code> e <code>align-items</code> para alinhar elementos perfeitamente.</p>
+                    <a href="#" class="card-link">Explorar &rarr;</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE CONTEÚDO E BARRA LATERAL -->
+        <section id="sobre" class="content-sidebar-section">
+            <!-- 
+              Dica: Use `display: flex` ou `display: grid` (ex: `grid-template-columns: 2fr 1fr`) 
+              para posicionar o artigo principal ao lado da barra lateral (sidebar).
+            -->
+            <div class="content-wrapper">
+                
+                <article class="main-article">
+                    <h2 style="color: #475569;">Sobre o Guia de Prática</h2>
+                    <p>Dica: Use <code>line-height: 1.6</code> e <code>margin-bottom</code> para melhorar a leitura de blocos de texto longos.</p>
+                    <ul>
+                        <li><strong>Seletores CSS:</strong> Pratique selecionar por tag (ex: <code>p</code>), classe (ex: <code>.card</code>) e ID (ex: <code>#inicio</code>).</li>
+                        <li><strong>Pseudo-classes:</strong> Experimente aplicar estilos interativos usando <code>:hover</code> e <code>:focus</code> nos links e botões.</li>
+                        <li><strong>Responsividade:</strong> Crie uma media query <code>@media (max-width: 768px)</code> para adaptar seu layout para smartphones.</li>
+                    </ul>
+                </article>
+
+                <aside class="sidebar">
+                    <!-- Dica: Use `background-color` diferenciado, `padding` e `border-radius` para destacar a barra lateral -->
+                    <h3 class="sidebar-title">Links Úteis</h3>
+                    <ul class="sidebar-list">
+                        <li><a href="#" class="sidebar-link">MDN Web Docs (CSS)</a></li>
+                        <li><a href="#" class="sidebar-link">Guia de Flexbox CSS</a></li>
+                        <li><a href="#" class="sidebar-link">Color Palette Generator</a></li>
+                    </ul>
+                </aside>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE CONTATO -->
+        <section id="contato" class="contact-section">
+            <!-- Dica: Centralize esta seção usando `max-width`, `margin: 0 auto` e adicione um fundo contrastante -->
+            <div class="contact-container">
+                <h2 class="section-title">Envie seu Feedback</h2>
+                
+                <form class="contact-form" action="#" method="POST">
+                    <!-- Dica: Use `display: flex` com `flex-direction: column` para organizar os campos do formulário -->
+                    
+                    <div class="form-group">
+                        <label for="nome" class="form-label">Seu Nome:</label>
+                        <!-- Dica: Use `padding`, `border`, `border-radius` e `width: 100%` nos inputs -->
+                        <input type="text" id="nome" name="nome" class="form-input" placeholder="Digite seu nome completo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Seu E-mail:</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem" class="form-label">Sua Mensagem ou Dúvida:</label>
+                        <!-- Dica: Use `resize: vertical` e defina um bom `min-height` para a caixa de texto -->
+                        <textarea id="mensagem" name="mensagem" class="form-textarea" rows="4" placeholder="Escreva seus comentários sobre a prática..."></textarea>
+                    </div>
+
+                    <!-- Dica: Use `background-color`, `color`, `cursor: pointer` e transições (`transition: background 0.3s`) no botão -->
+                    <button type="submit" class="btn btn-submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ DO SITE -->
+    <footer id="site-footer" class="footer-container">
+        <!-- Dica: Use `background-color` escuro, `color` claro e `display: flex` para organizar o rodapé -->
+        <div class="footer-content">
+            <p class="copyright">&copy; 2026 Laboratório Prático de CSS. Desenvolvido para estudantes de Web Design.</p>
+            <ul class="social-links">
+                <!-- Dica: Use `display: inline-block` ou `flex` e remova o sublinhado dos links sociais -->
+                <li><a href="#" class="social-link">GitHub</a></li>
+                <li><a href="#" class="social-link">LinkedIn</a></li>
+                <li><a href="#" class="social-link">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html
